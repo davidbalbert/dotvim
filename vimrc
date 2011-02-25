@@ -81,4 +81,5 @@ map <leader>tm :tabmove
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
-
+" :w!! reopens the file as sudo and saves it
+cmap w!! %!sudo tee > /dev/null %
