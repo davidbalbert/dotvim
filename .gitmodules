@@ -22,3 +22,6 @@
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = http://github.com/vim-ruby/vim-ruby.git
+[submodule "bundle/vim-taglist-plus"]
+	path = bundle/vim-taglist-plus
+	url = https://github.com/int3/vim-taglist-plus.git
