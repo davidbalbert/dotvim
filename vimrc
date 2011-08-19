@@ -56,6 +56,8 @@ colorscheme topfunky-light
 " set up map leader
 let mapleader=","
 
+map <leader>t :FufCoverageFile<cr>
+
 " Tab mappings.
 "map <leader>tt :tabnew<cr>
 "map <leader>te :tabedit
