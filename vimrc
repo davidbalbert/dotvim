@@ -58,9 +58,17 @@ colorscheme topfunky-light
 " set up map leader
 let mapleader=","
 
+" use FuzzyFinder
 map <leader>t :FufCoverageFile<cr>
 
+" get rid of search hilights
 nmap <silent> ,/ :nohlsearch<cr>
+
+" Easy window navigation
+nmap <leader>h <C-w>h
+nmap <leader>j <C-w>j
+nmap <leader>k <C-w>k
+nmap <leader>l <C-w>l
 
 " Uncomment to use Jamis Buck's file opening plugin
 "map <Leader>t :FuzzyFinderTextMate<Enter>
