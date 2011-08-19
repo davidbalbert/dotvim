@@ -8,8 +8,6 @@ silent! call pathogen#runtime_append_all_bundles()
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
-runtime macros/matchit.vim        " Load the matchit plugin.
-
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
 
@@ -39,6 +37,10 @@ set nobackup                      " Don't make a backup before overwriting a fil
 set nowritebackup                 " And again.
 set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 
+set mouse=a                       " mouse support
+
+set clipboard=unnamed             " use system clipboard
+
 " UNCOMMENT TO USE
 set tabstop=2                    " Global tab width.
 set shiftwidth=2                 " And again, related.
@@ -53,19 +55,22 @@ set list listchars=tab:\ \ ,trail:·
 " Or use vividchalk
 colorscheme topfunky-light
 
-" Tab mappings.
-map <leader>tt :tabnew<cr>
-map <leader>te :tabedit
-map <leader>tc :tabclose<cr>
-map <leader>to :tabonly<cr>
-map <leader>tn :tabnext<cr>
-map <leader>tp :tabprevious<cr>
-map <leader>tf :tabfirst<cr>
-map <leader>tl :tablast<cr>
-map <leader>tm :tabmove
+" set up map leader
+let mapleader=","
 
-" Uncomment to use Jamis Buck's file opening plugin
-"map <Leader>t :FuzzyFinderTextMate<Enter>
+" use FuzzyFinder
+map <leader>t :FufCoverageFile<cr>
+" nicer colors for popup menu
+highlight Pmenu ctermfg=1 ctermbg=4 guibg=grey30
+
+" get rid of search hilights
+nmap <silent> ,/ :nohlsearch<cr>
+
+" Easy window navigation
+nmap <leader>h <C-w>h
+nmap <leader>j <C-w>j
+nmap <leader>k <C-w>k
+nmap <leader>l <C-w>l
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
