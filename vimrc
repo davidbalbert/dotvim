@@ -53,6 +53,9 @@ set list listchars=tab:\ \ ,trail:·
 " Or use vividchalk
 colorscheme topfunky-light
 
+" set up map leader
+let mapleader=","
+
 " Tab mappings.
 map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
