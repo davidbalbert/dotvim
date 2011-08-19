@@ -60,6 +60,8 @@ let mapleader=","
 
 " use FuzzyFinder
 map <leader>t :FufCoverageFile<cr>
+" nicer colors for popup menu
+highlight Pmenu ctermfg=1 ctermbg=4 guibg=grey30
 
 " get rid of search hilights
 nmap <silent> ,/ :nohlsearch<cr>
