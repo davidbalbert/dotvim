@@ -65,7 +65,7 @@ map <leader>b :FufBuffer<cr>
 highlight Pmenu ctermfg=1 ctermbg=4 guibg=grey30
 
 " get rid of search hilights
-nmap <silent> ,/ :nohlsearch<cr>
+nmap <silent> <leader>/ :nohlsearch<cr>
 
 " Easy window navigation
 nmap <leader>h <C-w>h
