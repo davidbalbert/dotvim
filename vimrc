@@ -73,6 +73,11 @@ nmap <leader>j <C-w>j
 nmap <leader>k <C-w>k
 nmap <leader>l <C-w>l
 
+" fugitive
+nmap <leader>gd :Gdiff<cr>
+nmap <leader>gs :Gstatus<cr>
+nmap <leader>gc :Gcommit<cr>
+
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
 "nnoremap : ;
