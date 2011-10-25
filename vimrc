@@ -60,6 +60,7 @@ let mapleader=","
 
 " use FuzzyFinder
 map <leader>t :FufCoverageFile<cr>
+map <leader>b :FufBuffer<cr>
 " nicer colors for popup menu
 highlight Pmenu ctermfg=1 ctermbg=4 guibg=grey30
 
