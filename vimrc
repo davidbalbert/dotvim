@@ -98,3 +98,12 @@ cmap w!! %!sudo tee > /dev/null %
 
 " needed for rubyblock
 runtime macros/matchit.vim
+
+" for ctags
+nmap <leader>rt :!ctags --extra=+f -R *<CR><CR>
+" jump to definition
+nmap <leader>d <C-]>
+" jump back from definition
+nmap <leader>c <C-t>
+" open definition in a new vertical split
+nmap <leader>s :vsp <CR><C-w>l:exec("tag ".expand("<cword>"))<CR>
