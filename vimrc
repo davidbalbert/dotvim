@@ -93,6 +93,9 @@ set foldlevelstart=20
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
+" Use javascript plugin for json
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
 " :w!! reopens the file as sudo and saves it
 cmap w!! %!sudo tee > /dev/null %
 
