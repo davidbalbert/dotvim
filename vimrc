@@ -110,3 +110,7 @@ nmap <leader>d <C-]>
 nmap <leader>c <C-t>
 " open definition in a new vertical split
 nmap <leader>s :vsp <CR><C-w>l:exec("tag ".expand("<cword>"))<CR>
+
+" VimOrganizer
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
+au BufEnter *.org            call org#SetOrgFileType()

@@ -52,3 +52,12 @@
 [submodule "bundle/VimClojure"]
 	path = bundle/VimClojure
 	url = https://github.com/vim-scripts/VimClojure.git
+[submodule "bundle/VimOrganizer"]
+	path = bundle/VimOrganizer
+	url = https://github.com/hsitz/VimOrganizer.git
+[submodule "bundle/NrrwRgn"]
+	path = bundle/NrrwRgn
+	url = https://github.com/chrisbra/NrrwRgn.git
+[submodule "bundle/cocoa"]
+	path = bundle/cocoa
+	url = https://github.com/msanders/cocoa.vim.git
